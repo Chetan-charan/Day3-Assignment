@@ -26,13 +26,17 @@ for(var i=0;i<arr.length;i++){
 }
 
 //for of
-for(x of arr){
-    console.log(x)
+for(var x of arr){
+    console.log(x.heading);
+    console.log(x.content);
+    console.log(x.id);
 }
 
 //for each
 arr.forEach(myFunction)
 
 function myFunction(x) {
-  console.log(x);
+  console.log(x.heading);
+  console.log(x.content);
+  console.log(x.id);
 }
