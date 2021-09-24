@@ -1,42 +1,30 @@
-var arr =  [
-    {
-    "heading": "aliquid",
-    "content": "Libero aut voluptas dolorem est aperiam dolor aperiam.",
-    "picture": "http://placeimg.com/640/480/nature",
-    "id": "1"
-},{
+var object = {
     "heading": "aut",
     "content": "Pariatur assumenda delectus tenetur tempora et.",
     "picture": "http://placeimg.com/640/480/nature",
     "id": "2"
 }
-]
+
 
 //for-in
-for(var m in arr){
-    console.log(m,arr[m]);
+for(var m in object){
+    console.log(m,object[m]);
 }
 
+var keys = Object.keys(object);
+
 //for loop
-for(var i=0;i<arr.length;i++){
-    var obj = arr[i];
-    for(var key in obj){
-        console.log(key,obj[key])
-    }
+for(var i=0;i<keys.length;i++){
+
+    console.log(object[keys[i]])
+    
 }
 
 //for of
-for(var x of arr){
-    console.log(x.heading);
-    console.log(x.content);
-    console.log(x.id);
+for(var x of keys){
+    console.log(x,object[x]);
+    
 }
 
 //for each
-arr.forEach(myFunction)
-
-function myFunction(x) {
-  console.log(x.heading);
-  console.log(x.content);
-  console.log(x.id);
-}
+keys.forEach(key => console.log(key,object[key]));
