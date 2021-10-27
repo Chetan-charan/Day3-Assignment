@@ -7,24 +7,24 @@ var object = {
 
 
 //for-in
-for(var m in object){
+for(var m in object){                                                   //loop through object using for in loop
     console.log(m,object[m]);
 }
 
 var keys = Object.keys(object);
 
-//for loop
+                                                                       //using for loop
 for(var i=0;i<keys.length;i++){
 
     console.log(object[keys[i]])
     
 }
 
-//for of
+                                                                        //using for of
 for(var x of keys){
     console.log(x,object[x]);
     
 }
 
-//for each
+                                                                        //using for each
 keys.forEach(key => console.log(key,object[key]));
