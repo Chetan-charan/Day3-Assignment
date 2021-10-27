@@ -11,6 +11,6 @@ my_profile = {
 
 }
 
-for(var x in my_profile){
+for(var x in my_profile){                                //loop through all the values of my_profile
     console.log(x,my_profile[x])
 }
